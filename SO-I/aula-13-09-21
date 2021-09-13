@@ -1,0 +1,36 @@
+Sistemas Monolíticos:
+
+-Estutura SImples, não possuem estrutura bem definida.
+-Geralmente esses sistemas surgiam limitados, pequenos e simples.
+Ex: UNIX
+	-Limitado pelas funções de HW, o UNIX original tinha uma estruturação limitada, mas já com aspectos de proteção e multiprogramação.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Sistema em Camadas:
+
+-A divisão em partes menores pode proporcionar maior controle do computador e dos aplicativos, alé de trazer vantagens aos desenvolvedores pela modularidade.
+-O SO é dividido em um número de camdas, cada uma contruída no topo do nível mais baixo. 
+	- O nível mais baixo é o hardware(nível 0), o mais alto é a interface do usuário.
+- Outro problema dessa abordagem é a perda de eficiência, devido ao overhead das várias camadas.
+-Na prática, tem-se implementado MENOS CAMADAS  com mais funcionalidades, mas mantendo alguma modularidade.
+Ex: OS/2 e WinNT.
+	OS/2: IBM
+	WInNT: MS
+	
+	IBM valorizou mais a produção de hardware, pois era mais lucrativo, e deu o sistema operacional para a Microsoft. Porém, o hardware foi barateando, já que muitos países produziam (China, Japão). Microsoft gerou o MSDos, que logo se tornou o Windows. Com baixo custo de produção, o Windows foi vendido em larga escala e gerou grande riqueza para a Microsoft.
+	Na tentativa de corrigir o erro da perda do SO para a Microsoft, a IBM criou um novo SO, chamado OS/2, inicialmente melhor que o Windows.
+	Em contrapartida, a Microsoft lançou o WinNT e o Windows 2000, copiando características do OS/2(Robustez, segurança, mais camadas). O público que estava acostumado com o Windows, não migrou para OS/2.
+	Então a IBM começou a fazer propaganda do Linux e desativou o OS/2.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Sistemas Microkernels:
+
+-Conforme o UNIX se expandiu, o kernel se tornou grange e difícil de gerenciar. Então decidiram criar os microkernels.
+-Esse método estrutura o SO removendo os programas não essenciais do kernel e implementando-os como PROGRAMAS DE SISTEMA de nível de USUÁRIO(modo não privilegiado). O resultado é um kernel menor.
+	-A principal função do microkernel é fornecer um mecanismo de comunicação entre um programa cliente e os vários serviços que também estão em execução no espaço do usuário.
+	-Isso é feito através da troca de mensagens.
+-Sofre overhead assim como o sistema em camadas.
+-Difícil de implementar, pois certas funções exigem acesso diret ao hrdware.
+-Essa estrutura também afeta o desempenho do sistema devido à necessidade de comunicação entro módulos.
+-Uma vantagem é que a abordagem de microkernels facilita a expansão do SO.
+ 
