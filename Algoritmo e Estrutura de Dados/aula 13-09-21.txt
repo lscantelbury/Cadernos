@@ -1,0 +1,36 @@
+Operações básicas sobre arquivos:
+
+-Criar arquivo.
+-Abrir o arquivo.
+-Fechar o arquivo.
+-Escrever dados no arquivo.
+-Ler dados do arquivo.
+-Verificar se o fim do arquivo foi alcançado.
+-Buscar dados no arquivo.
+
+Strem(fluxo): transfere dados entre um programa e um arquivo.Dados em fluxo contínuo de transmissão(Spotify, Netflix).
+
+Classe std::ofstream da biblioteca fstream.h: criação e escrita de dados em arquivo.
+
+Criando e escrevendo:
+
+void escrevendoEmArquivo(){
+	ofstream arquivo;
+	arquivo.open("/.../.../Texte.txt");
+	iff (!arquivo){
+		cerr <<"Falha na abertura do arquivo."<< endl;
+		exit(1)
+
+	}
+
+	arquivo <<"Esta linha sera gravada no arquivo">>;
+	arquivo.close();
+}
+
+Lendo:
+
+void lendoChardoArquivo(){
+	ifstream arquivo;
+	arquivo.ioen("/.../.../Texte.txt");
+	//incompleto
+}
