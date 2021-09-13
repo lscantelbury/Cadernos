@@ -1,0 +1,105 @@
+Elementos Básicos do Java:
+
+-Entrada opção 1: 
+	System.out.println("imprime s/ saltar linha");
+	System.out.println( "imprime e salta" );
+
+- Saída opção 1:
+	import java.util.Scanner;
+	
+	public class BasicScanner{
+
+	public stativ void main(String[] args){
+		Scanner scanner = new Scanner(System.in);
+		System.out.printn("digite o nome: ");
+		String testeStr = scannetr.nextLine();
+		System.out.println("digite a idade: ");
+		int i = scanner.nextInt();
+		System.out.println(i);
+		System.out.println("Digite a altura: ");
+		float j = scanner.nextFloat(0;
+		System.out.print
+	}	
+}
+
+-Entrada opção 2- usar o método showInputDialog da classe JOption da API Java:
+	String a = JOptionPane.showInputDialog("Identifique-se padawan: "); // exibe caixa de diálogo.
+
+-Saída opção 2 - usar o método showMessageDialog classe JOptionPane da API Java:
+	JOptionPane.showMessageDialog(null, "mensagem"); // exibe uma caixa de diálogo, sendo uma solução mais interessante.
+
+Ex:
+	import.javax.swing.JOptionPane;
+	public class EntradaComJOptionPane{
+		String s = JOptionPane.showInputDialog("Identifique-se padawan: ");
+		System.out.println(s);
+		JOptionPane.showMessageDialog(null, "Seu nome é " + s);
+		s = JOptionPane.showInputDialog("entre com um numero inteiro: ");
+		int i = Interger.parseInt(s); //converte o valor da variável "s" para int e guardando em "i";// ou int i = new Interger(s);
+		System.out.println(i);
+		JOptionPane.showMessageDialog(null, "Seu nome é " + i);
+		
+		s = JOptionPane.showInputDialog("Entre com um número real: ");
+		double d = new Double(s);
+		System.out.println(d);
+		JOptionPane.showMessageDialog(null, "Seu número real é: " + String.format("%.2f", d));
+}
+
+-Entrada opção 3 - usar o método showConfirmDialog da classe JOptionPane:
+
+	import javax.swing.JOptionPane;
+	public class MeuNome{
+	String s = JOptionPane.showInputDialog("Entre com seu nome: ");
+	bool t = JOptionPane.showConfirmDialog(s + " é seu nome?");
+	if (t.equals(True)){
+		JOptionPane.showMessageDialog(null, "ESSE É O MEU NOME");
+	
+	}else{
+		JOptionPane.showMessageDialog(null, "ESSE NÃO É O MEU NOME");
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estruturas de seleção:
+
+-if-else:
+	if (a.peso > b.peso){
+		//linha de codigo é executada
+}	
+	else{
+		//linha de codigo é executada
+}
+
+-switch(x){
+	case 1;
+		x++;
+		System.out.println( "somei 1" );
+		break;
+	case 2;
+	  	// incompleto
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Estruturas de repetição:
+
+-for:
+	int y = 0;
+	for (int = 0; x < 10: x++{
+		y = x*x;
+		System.out.println( "y = " + y);
+		System.out.println();
+
+}
+
+-while:
+	int y = 0;
+	int x = 0;
+	while ( x <= 10){
+		y = x*x;
+		System.out.println( "y = " + y);
+		System.out.println();
+		x++;
+}
+
