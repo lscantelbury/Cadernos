@@ -1,0 +1,33 @@
+Teoria dos Autômatos:
+
+-Humanidade sempre almejou ter uma maquina que funcionasse sozinha.
+-Os primeiros indícios da ideia de autômatos remete a grécia antiga.
+
+-A Teoria dos Autômatos lida com modelos que realizam a computação{
+	-Estudo da definição e das propriedades desses modelos.
+	-Importância para diversas áreas da Ciência da Computação.
+	-Vasta aplicação: compiladores, linguagens de programação, IA, etc.
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Insolubilidade computacional:
+
+-Existem certos problemas que não podem ser resolvidos por computador{
+	-Limitações inerentes a quase todos todos os sistemas axiomáticos, exceto os mais triviais.
+}
+
+-O que é um algoritmo:{
+	-Alonzo Church e Alan Turing.
+	-Desenvolvimento de modelos e ideias que levaram à construção dos computadores atuais.
+}
+
+Quais problemas podem um computador resolver?
+
+-Computacionalmente insolúveis{
+	-Problema da correspondência de Post(PCP).{
+		-Entrada: um dominó de letras.
+		-Saída: uma maneira de organizar as pedras do dominó de modo que a sequência de cima seja igual a de baixo. As pedras podem se repetir.
+		-Exemplo: a/ab, b/ca, ca/a, a/ab, abc/c = abcaaabc/abcaabc.
+		-Computacionalmente a máquina iria combinar d1d2, d1d1d2, d1d1d1d2, d1d1d1d1d2, ..., inifinitamente e jamais chegaria em d2d3, portando também não chegaria a resposta correta.
+	}		
+}
