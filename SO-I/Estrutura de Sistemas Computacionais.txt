@@ -1,0 +1,41 @@
+Sistema de Hardware:
+
+-Definição: Conjunto de circuitors eletrônicos interligados, formados por processadores, memórias, registradores, barramentos e periféricos de entrada e saída.
+-Objetivo: Manipular dados na forma digital, o que proporciona uma forma mais confiável e flexível de representação e transmissão de dados.
+-Sub-sistemas básicos: Unidade Central de Processamento(CPU), Memória principal e Dispositivos de E/S.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Arquitetura Básica:
+
+-Processador:{
+	-Gerencia todo o sistema computacional controlando as operações realizadas por cada unidade funcional.
+	-Sua função é executar instruções presentes na memória principal.
+	-São compostos por unidade de controle, unidade lógica e aritmética, e registradores.
+	-RISC x CISC{
+		-RISC: Poucas instruções simples executadas diretamente pelo hardware.(Sparc, Alpha, MIPS).
+		-CISC: Muitas instruções complexas interpretadas por microprogramas.(x86)
+	}
+	-Memória Principal:{
+		-Armazena instruções e dados em um esquema de endereçamento.
+		-Único tipo de memória acessado diretamente pela CPU.
+	}
+	-Dispositivos de E/S:{
+		-Permite comunicação com o mundo externo.
+		-Comuns: Dispositivos de armazenamento secundário e dispositivos de interface homem-máquina.
+		-Normalmente são manipulados através das controladoras de dispositivos.
+	-Barramento: Meio de comunicação compartilhado que interliga as unidades funcionais.
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Funcionamento:
+
+-Inicialização: Quando o computador é iniciado, precisa de um programa inicial(bootstrap) para executar e realizar a inicialização de todos os aspectos do sistema(registradores da CPU, dispositivos, memória, etc).
+-Interrupção: Após a inicialização(boot) aguarda alguma interrupção para que execute algo, Interrupções podem se provenientes dos dispositivos ligados ao barraento ou de software dos sistemas (system calls). Quando uma interrupção ocorre, a CPU para de fazer o que estava fazendo para processá-la.
+-Proteção do Hardware:{
+	-Um SO precisa garantir a operação correta do sistema de computação. Para evitar que os programas de usuário interfiram na operação correta do sistema, o hardware possui dois modos{
+		-Modo usuário: Para execução de processos do usuário.
+		-Modo Monitor(ou protegido): Para processos de sistema realizarem instruções privilegiadas(gerência de memória, I/O, etc).
+	}
+	-Para executar instruções privilegiadas, os processos do usuário devem fazer solocitações aos do monitos(Chamadas de Sistema).
+}
