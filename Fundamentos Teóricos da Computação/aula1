@@ -10,8 +10,7 @@ Teoria dos Autômatos:
 }
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
-Insolubilidade computacional:
-
+Computabilidade:
 -Existem certos problemas que não podem ser resolvidos por computador{
 	-Limitações inerentes a quase todos todos os sistemas axiomáticos, exceto os mais triviais.
 }
@@ -21,7 +20,7 @@ Insolubilidade computacional:
 	-Desenvolvimento de modelos e ideias que levaram à construção dos computadores atuais.
 }
 
-Quais problemas podem um computador resolver?
+#Quais problemas podem um computador resolver?
 
 -Computacionalmente insolúveis{
 	-Problema da correspondência de Post(PCP).{
@@ -31,3 +30,15 @@ Quais problemas podem um computador resolver?
 		-Computacionalmente a máquina iria combinar d1d2, d1d1d2, d1d1d1d2, d1d1d1d1d2, ..., inifinitamente e jamais chegaria em d2d3, portando também não chegaria a resposta correta.
 	}		
 }
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+Teoria da Complexidade:
+
+-Custo computacional dos problemas.
+
+#O que faz alguns problemas computacionais serem difíceis e outros fáceis?
+
+-Ex: Ordenação vs Alocação. Ordenando por Bubble Sort custaria n², mas alocando custaria 2^n, se ambos tivessem n = 100, alocar custaria 2¹⁰⁰(idade do universo).
+-Esquema para classificação de problemas de acordo com a dificuldade que podem ser resolvidos por um computador.
+-Utilização de modelos alternativos de computação.
+-Aplicação MAIS RELEVANTE:Criptografia.
