@@ -1,0 +1,9 @@
+Definição Formal de Computação:
+
+-Computação por AFD:{
+	Seja A = (Q, E, Delta, q0, F) um autômato finito determinístico e w = w1w2...wn uma palvra com wi pertence a Sigma. Diz-se que A aceita w se existe uma sequència de estados r0r1
+}
+
+Linguagem do Autômato: Um autômato
+
+//rever aulas
