@@ -1,11 +1,11 @@
 import javax.swing.JOptionPane;
 
-public class Principal{
+public class principal{
 	public static void main(String[] args) {
 		
-		String v1 = JOptionPane.showInputDialog("Qual é o valor 1?");
+		String v1 = JOptionPane.showInputDialog("Qual eh o valor 1?");
 		int i = Interger.parseInt(v1);
-		String v2 = JOptionPane.showInputDialog("Qual é o valor 2");
+		String v2 = JOptionPane.showInputDialog("Qual eh o valor 2");
 		int n = Interger.parseInt(v2);
 		
 		int resultadoSoma;

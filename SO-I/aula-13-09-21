@@ -1,6 +1,6 @@
 Sistemas Monolíticos:
 
--Estutura SImples, não possuem estrutura bem definida.
+-Estutura Simples, não possuem estrutura bem definida.
 -Geralmente esses sistemas surgiam limitados, pequenos e simples.
 Ex: UNIX
 	-Limitado pelas funções de HW, o UNIX original tinha uma estruturação limitada, mas já com aspectos de proteção e multiprogramação.
@@ -8,7 +8,7 @@ Ex: UNIX
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 Sistema em Camadas:
 
--A divisão em partes menores pode proporcionar maior controle do computador e dos aplicativos, alé de trazer vantagens aos desenvolvedores pela modularidade.
+-A divisão em partes menores pode proporcionar maior controle do computador e dos aplicativos, além de trazer vantagens aos desenvolvedores pela modularidade.
 -O SO é dividido em um número de camdas, cada uma contruída no topo do nível mais baixo. 
 	- O nível mais baixo é o hardware(nível 0), o mais alto é a interface do usuário.
 - Outro problema dessa abordagem é a perda de eficiência, devido ao overhead das várias camadas.
@@ -22,7 +22,7 @@ Ex: OS/2 e WinNT.
 	Em contrapartida, a Microsoft lançou o WinNT e o Windows 2000, copiando características do OS/2(Robustez, segurança, mais camadas). O público que estava acostumado com o Windows, não migrou para OS/2.
 	Então a IBM começou a fazer propaganda do Linux e desativou o OS/2.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------
 Sistemas Microkernels:
 
 -Conforme o UNIX se expandiu, o kernel se tornou grange e difícil de gerenciar. Então decidiram criar os microkernels.

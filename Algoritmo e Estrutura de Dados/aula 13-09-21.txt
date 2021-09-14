@@ -8,7 +8,7 @@ Operações básicas sobre arquivos:
 -Verificar se o fim do arquivo foi alcançado.
 -Buscar dados no arquivo.
 
-Strem(fluxo): transfere dados entre um programa e um arquivo.Dados em fluxo contínuo de transmissão(Spotify, Netflix).
+Stream(fluxo): transfere dados entre um programa e um arquivo.Dados em fluxo contínuo de transmissão(Spotify, Netflix).
 
 Classe std::ofstream da biblioteca fstream.h: criação e escrita de dados em arquivo.
 
