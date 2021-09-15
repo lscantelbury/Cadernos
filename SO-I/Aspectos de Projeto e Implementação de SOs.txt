@@ -1,0 +1,22 @@
+Projeto:
+
+-Objetivo no Projeto de SO{
+	-Para o usuário, SOs precisam ser:{
+		-convenientes de usar e fáceis de aprender(usabilidade).
+		-confiáveis, seguros e rápidos.
+	}
+	-Para o proetista, SOs devem ser:{
+		-fáceis de projetar, implementar e manter(desenvolvimento).
+		-devem ser flexíveis, confiáveis, livres de erros e eficientes
+	}
+}
+--------------------------------------------------------------------------------------------
+Implementação:
+
+-Tradicionalmente, SOs são escritos em assembly, mas hoje em dia, podem ser escritos em linguages de mais alto nível(ex:C)
+-Código escrito em linguagem de alto nível tem as seguintes vantagens:{
+	-Pode ser escrito mais rápido.
+	-É mais compacto.
+	-Fácil de entender e debugar.
+}
+-Sistemas Operacionais mais fáceis de portas para plataformas de hardware diferentes são escritos em linguagens de alto nível(ex:Linux).

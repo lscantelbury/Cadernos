@@ -1,0 +1,88 @@
+Visão em Camadas:
+
+[Usuários]
+[Aplicações/Utilitários/Interpretados de Comandos]
+[Núcleos do SO]
+[Hardware]
+
+--------------------------------------------------------------------------------------------
+Núcleos do SO:
+
+-Gerenciamento de Processos:{
+	-Um processo é um programa em execução. Um processo necessita de determinados recursos, incluindo tempo de CPU, memória, arquivos e dispositivos de I/O para completar suas ações.
+	-Atividades:{
+		-Criação e destruição de processos.
+		-Suspensão e retomada de processos.
+		-Prover mecanismos para: Sincronizaçã e comunicação entre processos.
+	}
+}
+
+-Gerenciamento de Memória Principal:{
+	-Grande array(vetor) de word ou bytes, cada um com seu endereço.
+	-Repositório de dados rapidamente acessível e compartilhado pela CPU e dispositivos de I/O.
+	-O armazenamento é volátil.
+	-Atividades:{
+		-Manter registros das partes de memória que estão sendo usadas no momento e por quem.
+		-Decidir que processos deverão ser carregados na memória quando houver espaço disponível.
+		-Alocar e liberar espaço de memória quando necessário.
+	}
+}
+
+-Gerenciamento de Armazenamento Secundário:{
+	-Um sistema computacional precisa prover um armazenamento secundário para dar suporte à memória principal.
+	-A maioria dos sistemas modernos usam discos como armazenamento secundário, tanto para programas quanto para dados.
+	-Atividades:{
+		-Gerenciamento do espaço livre.
+		-Alocação do espaço(armazenamento).
+		-Escalonamento de disco.
+	}
+}
+
+-Gerenciamento do sistema de I/O:{
+	-O sistema de I/O consiste de:{
+		-Componente para bufferização, armazenamento em cache e spooling.
+		-Uma interface geral de driver de dispositivos.
+		-Drivers para dispositivos específicos de hardware.
+	}
+}
+
+-Gerenciamento de Arquivos{
+	-Atividades:{
+		-Manipulação de arquivos e diretórios.
+		-Mapeamento de arquivos em dispositivos de armazenamento secundário.
+	}
+}
+
+-Outros:{
+	-Redes: recursos para a comunicação em rede de vários computadores.
+	-Proteção: mecanismos para controlar o acesso de programas, processos ou usuários ao sistema e seus recursos.
+	-Contabilização e Logs: uso e estatísticas do sistema.
+}
+
+-Sistema interpretador de comandos:{
+	-Sistema de shell.
+	-Muitos comandos são dados ao sistema operacional através de intruções de controle com o objetivo de:{
+		-Criar e gerenciar processos.
+		-Manipular I/O.
+		-Gerenciar o armazenamento secundário.
+		-Gerenciar a memória principal.
+		-Acessar o sistema de arquivos.
+		-Proteção do sistema.
+		-Comunicação em rede.
+	}
+}
+
+---------------------------------------------------------------------------------------------
+Utilitários:
+
+-Programas de sistema:{
+	-Podem ser divididos em:{
+		-Programas de manipulação de arquivos(dir, copy, del).
+		-Informação de status(mem, date).
+		-Suporte à linguagem de programação(compiladores).
+		-Carregamento e execução de programas.
+		-Comunicações(envio de mensagens).
+		Utilitários de sistema.
+	}
+	-Na maioria das vezes, os usuários enxergam o SO pelos seus programas de sistema, não pelas suas chamadas de sistema.
+}
