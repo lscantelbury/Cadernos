@@ -1,0 +1,44 @@
+Teoria da Computação:
+
+-Estudamos através de 3 teorias:{
+	-Teoria dos Autômatos(Máquinas Abstratas)
+	-Teoria da Computabilidade(Quais problemas podem ser resolvidos por um computador.
+	-Teoria da Complexidade(Custo computacional de um problema solucionável).
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Linguagens Formais: Linguagens Artificias (Linguagens de Programação) e  Sintaxe.
+
+-Alfabeto: Conjunto finito de símbolos(Denotados por letras gregas maiúsculas).{
+	Ex: Sigma = {a, b, c, d, ..., z}
+	    Alpha = {0,1} (Alfabetos com dois símbolos são chamados "alfabetos binários")
+}
+
+-Palavras(Cadeias/Strings): Sequências finitas de símbolos de um certo alfabeto.{
+	
+	Ex: Alpha = {0, 1}(Alfabeto binário)
+	    palavra1 = 000	|palavra1| = 3
+	    palavra2 = 01010	|palavra2| = 5
+	    palavra3 = 1	|palavra3| = 1
+	
+	#Entre barras(como o símbolo de modo) representa comprimento.	
+	
+	-Palavra Vazia(lambda): Palavra cujo comprimento é 0(|lambda| = 0).
+}
+
+Linguagem: Conjunto de palavras.{
+	Ex: Alpha = {0, 1}
+	    Linguagem1 = {000, 001, 010, 011, 100, 101, 110, 111}(Tem regra de formação e finita)
+	    Linguagem2 = {1, 00, 101, 10, 000111}(Não tem regra de formação e finita) 
+	    Linguagem3 = {0, 00, 000, 0000, 00000, ..., infinito)(LINGUAGEM INFINITA)
+	    Linguagem4 = {lambda}(Possui uma palavra, mesmo sendo essa palavra vazia)
+	    Linguagem5 = ø (LINGUAGEM VAZIA: não possui palavras |Linguagem5| = 0)
+	
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Operações Regulares:
+
+-União: L1 U L2 = {w | w £ L1 V w £ L2}{
+	Ex: 
+}
