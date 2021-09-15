@@ -1,0 +1,80 @@
+#include <iostream>
+
+using namespace std;
+
+//variaveis universais
+int produtosRegistrados, codigo, quantidade;
+float preco, matriz[0][3];
+
+//Funçao para ler e atribuir os valores das variaveis
+void lerProduto(){
+    cout << "Código do produto: ";
+    cin >> codigo;
+    cout << "Quantidade do produto: ";
+    cin >> quantidade;
+    cout << "Preco do produto: ";
+    cin >> preco;
+}
+
+//Funçao para criar ledger de produtos
+void adicionarProdutoNaMatriz(){
+    matriz[produtosRegistrados][0] = codigo;
+    matriz[produtosRegistrados][1] = quantidade;
+    matriz[produtosRegistrados][2] = preco;
+}
+
+//Funçao para printar matriz
+void printarMatriz(){
+    cout << "CODIGO/QUANTIDADE/PRECO:"<<endl;
+    cout <<""<<endl;
+    for (int i = 0; i <= produtosRegistrados; i++){
+        cout <<"Produto "<< (i + 1) << " - "<< matriz[i][0]<<"    "<<matriz[i][1]<<"    "<<matriz[i][2]<<"\n";
+    }
+}
+
+//Funçao para criar matriz com produtos acima de 10 reais
+float matrizDezReais[5];
+void maisDeDezReais(){
+    for (int i = 0; i <= produtosRegistrados; i++){
+        if (matriz[i][2] > 10){
+            matrizDezReais[i] = matriz[i][2];
+        }
+    }
+}
+
+//Funçao para printar produtos acima de 10 reais
+void printarMatrizDezReais(){
+    for (int i = 0; i < sizeof(matrizDezReais); i++){
+        cout<<matrizDezReais[i]<<endl;
+    }
+}
+
+//Funçao para calcular media de produtos acima de 10 reais
+int media(){
+    int aux;
+    float soma;
+    for (int i = 0; i < sizeof(matrizDezReais); i++){
+        soma += matrizDezReais[i];
+        aux++;
+    }
+    return (soma/aux);
+}
+//CODIGO PRINCIPAL
+int main(){
+    char resposta = 's';
+    do{
+        lerProduto();
+        adicionarProdutoNaMatriz();
+        cout <<"Deseja resgistrar outro produto?(s/n)";
+        cin >> resposta;
+        if (resposta == 's'){
+            produtosRegistrados++;
+        }
+    }while(resposta == 's');
+    printarMatriz();
+    cout<<" "<<endl;
+    maisDeDezReais();
+    printarMatrizDezReais();
+    cout<<" "<<endl;
+    cout<<media()<<endl;
+}
