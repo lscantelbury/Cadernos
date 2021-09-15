@@ -1,0 +1,5 @@
+PILOT: Sistema operacional desenvolvido pela Xerox PARC, escrito na 
+linguagem de programação "Mesa", também desenvolvida pela empresa.
+	Com um total de 24 mil linhas de código, o Pilot foi criado 
+para ser um sistema de usuário único, que funcionaria em um ambiente de rede conectado a outras máquinas rodando Pilot.
+	O Pilot combina memória virtual e armazenamento e um sub-sistema, e utilizava

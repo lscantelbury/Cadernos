@@ -1,0 +1,17 @@
+Introdução:
+-O conceito de máquina virtual está baseado na abordagem de SO de camdas. Uma máquina virtual trata o hardware e o kernel do sistema operacional como se tudo fosse hardware.
+-Uma máquina virtual provê uma interface idêntica ao hardware subjacente.
+-O SO cria a ilusão de múltiplos processos, cada um executando no seu próprio processador e sua própria memória.
+-Pioneirismo da IBM, para virtualização de seu grandes servidores.
+//IBM pensou: "Vamos desenvolver um software e vamo chamar isso de máquina virtual. A ideia desse programa de sistema é compartilhar os recursos do hardware em várias máquinas virtuais como se fossem hardwares distintos.Assim cada usuário executa seus processos de forma "separada", porém utilizando um mesmo hardware."
+-O sistema usa o hardware real para simular um hardware virtual idêntico ou muito parecido, possibilitando a execução de outros sistemas operacionais ou outros programas.
+-----------------------------------------------------------------------------------------------------------------------------------------------Características: 
+
+-Os recursos de um computador físico são compartilhados para a criação de máquinas virtuais.{
+	-O escalonamento de CPU pide criar a aparência de que os usuários têm seus próprios processadores.
+	-Spooling(criar fila) e o sistema de arquivos criam a impressão de dispositivos e impressoras virtuais.
+	-Um terminal de usuário de tempo compartilhado funciona como um console para a máquina virtual.
+	//Spooling cria uma fila para o acesso de máquinas virtuais ao disco, já que todas elas compartilham o mesmo disco e não o podem acessar simultâneamente.
+	//As máquinas virtuais, nos primórdios serviam para separar os diferentes sistemas operacionais, impedindo que bugs, falhas e ataques danificassem os demais usuários. Dessa forma, as máquinas virtuais serviam como recurso de segurança.
+	//Hoje em dia as máquinas virtuais não rodam mais acima do hardware e abaixo do kernel, mas sim acima do kernel. Assim o usuário pode manter o sistema operacional de confiança e gerar uma máquina virtual sobre o SO.
+}
