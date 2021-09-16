@@ -23,7 +23,23 @@ apresentados através de gradações, onde é feita a correspondência entre cat
 
 	-n = tamanho da amostra(número de unidades observadas)//Número total de unidades observadas.
 
-	-f% = frequência percentual do i-ésimo valor ou categoria observado(a): f% = (fi/n) * 100.//frequencia percentual.
+	-f% = frequência percentual do i-ésimo valor ou categoria observado(a): f% = (fi/n) * 100.//frequencia percentual.Soma das porcentagens deve sempre resultar em 100.
 	-Fi = frequência acumulada até o i-ésimo valor.//soma das frequencias de cada uma das categorias(classes)
 }
 
+-Quando a amplitude dos dados for muito grande de mode que colocar o valor abaixo do outro produzirá uma tabela muito extensa com várias frequências com uma unidade apenas, o mais indicado é a utilização de intervalos numéricos para agrupas os dados. Os intervalos são chamados de "intervalos de classe". As possibilidades são:{
+	-5]10[, amplitude = 10 - 5 = 5, {5, 6, 7, 8, 9}.
+	-4[12], amplitude = 12 - 4 = 8, {5, 6, 7, 8, 9, 10, 11, 12}.
+}
+
+-Adotaremos como procedimento para a construção dos intervalos de classe o seguinte roteiro:{
+	-Encontre o menor e o maior valor das observações e determine a amplitude total dos dados: h = máx - min.
+	-Determine o número de intervalos(k): Uma regra prática para determinação do número de intervalos é a que diz que este deve variar entre 5 e 20 para um número muito elevado. Considerando observações e 20 para um número muito elevado. Considerando n o número de valores observados: k≃ sqrt(n) → arredondando o resultado para o primeiro inteiro.
+	-Uma outra possibilidade para determinar o número de intervalos de classe é aplicação da regra de Sturges. Pela regra, o número de intervalos de classe é dado pela expressão: k = 1 + 3,322 * log10(n) onde n é o tamanho da amostra e log é o logaritmo comum da base 10.
+	-Calcular a amlitude dos intervalos, dividindo a amplitude total pelo número de intervalos de classe: H = n/k.
+	-Construa os inteiros de classes de forma a incluir todos os valores observados n conjunto de dados. As frequências simples são determinadas observando quais valores do conjunto estão inclusos em cada um dos intervalos de classe;
+}
+
+-Em todas as etapas da construção das classes deve prevalecer o bom senso.
+-Se a primeira distribuição de frequências construída ficou muito resumida ou muito dispersa, aumente ou diminua o número de classe, diminuindo ou aumentando as suas amplitudes.
+-Não se recomenda trabalhar com intervalos de classe com amplitudes diferentes numa mesma tabela, exceto em casos excepcionais onde os valores extremos muito dispersos tenham de ser agrupados em uma única classe.
