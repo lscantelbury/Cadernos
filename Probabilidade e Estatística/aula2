@@ -1,0 +1,29 @@
+Representação Tabular:
+
+Tabela - Título respondendo as perguntas:o quê, onde e quando?
+---------------------------------------------------------------
+Coluna indicadora               | Cabeçalho
+--------------------------------|------------------------------
+				|		c
+Conteúdo da linha		| Célula   	o	
+				|		l
+				|		u	
+				|		n
+				|		a
+--------------------------------------------------------------
+Fonte: Origem dos dados.
+Nota: Informação esclarecedora.
+
+-Título e Fonte são dados OBRIGATÓRIOS.
+-As laterais da tabela não devem ser fechadas.
+-Nas tabelas de distribuições de frequências os dados referentes ao fenômeno são
+apresentados através de gradações, onde é feita a correspondência entre categorias ou valores possíveis e as frequências respectivas.
+-Notação{
+	-f = Frequência absoluta(simples) do i-ésimo valor observado. É o número de vezes que cada valor ou categoria é observado(a) no conjunto de dados.//Número de vezes que você observa cada um dos valores.
+
+	-n = tamanho da amostra(número de unidades observadas)//Número total de unidades observadas.
+
+	-f% = frequência percentual do i-ésimo valor ou categoria observado(a): f% = (fi/n) * 100.//frequencia percentual.
+	-Fi = frequência acumulada até o i-ésimo valor.//soma das frequencias de cada uma das categorias(classes)
+}
+
