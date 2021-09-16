@@ -1,0 +1,77 @@
+Teoria da Computação:
+
+-Estudamos através de 3 teorias:{
+	-Teoria dos Autômatos(Máquinas Abstratas)
+	-Teoria da Computabilidade(Quais problemas podem ser resolvidos por um computador.
+	-Teoria da Complexidade(Custo computacional de um problema solucionável).
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Linguagens Formais: Linguagens Artificias (Linguagens de Programação) e  Sintaxe.
+
+-Alfabeto: Conjunto finito de símbolos(Denotados por letras gregas maiúsculas).{
+	Ex: Sigma = {a, b, c, d, ..., z}
+	    Alpha = {0,1} (Alfabetos com dois símbolos são chamados "alfabetos binários")
+}
+
+-Palavras(Cadeias/Strings): Sequências finitas de símbolos de um certo alfabeto.{
+	
+	Ex: Alpha = {0, 1}(Alfabeto binário)
+	    palavra1 = 000	|palavra1| = 3
+	    palavra2 = 01010	|palavra2| = 5
+	    palavra3 = 1	|palavra3| = 1
+	
+	#Entre barras(como o símbolo de modo) representa comprimento.	
+	
+	-Palavra Vazia(lambda): Palavra cujo comprimento é 0(|lambda| = 0).
+}
+
+Linguagem: Conjunto de palavras.{
+	Ex: Alpha = {0, 1}
+	    Linguagem1 = {000, 001, 010, 011, 100, 101, 110, 111}(Tem regra de formação e finita)
+	    Linguagem2 = {1, 00, 101, 10, 000111}(Não tem regra de formação e finita) 
+	    Linguagem3 = {0, 00, 000, 0000, 00000, ..., infinito)(LINGUAGEM INFINITA)
+	    Linguagem4 = {lambda}(Possui uma palavra, mesmo sendo essa palavra vazia)
+	    Linguagem5 = ø (LINGUAGEM VAZIA: não possui palavras |Linguagem5| = 0)
+	
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Operações Regulares:
+
+£:Pertence; V: OU;
+
+-União: L1 U L2 = {w | w £ L1 V w £ L2}{
+	Ex:Alpha = {a,b} (alfabeto)
+	   l1    = {a, aa, ab}
+           l2    = {aa, lambda, bb}
+           l1 U l2 = {a, aa, ab, lambda, bb}//ordenando maior-menor{lambda, a aa, ab, bb}
+
+-Concatenação(Justapor):L1ºL2(lê-se L1 CONCATENADO COM L2){
+	-Não é comutativa.
+	-l1ºl2 = {aaa, alambda(mesma coisa que só "a"), abb, aaaa, aa, aabb, abaa, ab, abbb}}
+} 
+
+-Estrela de Kleene(Estrela) = L*(Todas as possíveis concatenações da linguagem L com ela mesma){
+	-Operação unária: pode ser feita com uma linguagem só.
+	-L* = Lº⁰ U Lº¹(L concatenada consigo mesma uma vez) U Lº² U Lº³ U Lº³...infinito.
+	-Zero ou mais concatenações de uma linguagem consigo mesma.
+	Ex: Alpha = {0, 1}(alfabeto)
+            L1 = {0, 1}
+            L1*= L1º⁰ U L1º¹ U L1º² U L1º³
+            L1* = {lambda} U {0, 1} U {00, 01, 10, 11} U {000, 001, 010, 011, 100, 101, 110, 111}
+	    L1* = {lamba, 0, 1, 00, 01, 10, 11, 000, 001, 010, 011,100, 101, 110, 111}(Tenho todas as palavras com total de letras:zero, um, dois, tres, quatro...infinito)
+        -Dessa forma, a união da linguagem concatenada consigo mesma infinitas vezes(Estrela de Kleene), é um conjunto com todas as palavras possíveis da linguagem.
+	-Cardinalidade(quantidade de itens no conjunto) da Estrela de Kleene é INFINITA.
+	(F)Ø £ E*//Pois vazio é uma linguagem, e a linguagem vazia não pertence a todas as palavras de um determinado alfabeto.
+	(V)Ø C E*//Pois o conjunto vazio é um subconjunto de todo conjunto.
+	(V)lambda £ E*//Pois a estrela de Kleene ao concatenar zero vezes consigo mesma(Lº⁰) resulta em lambda.
+	(V){lambda} C E*//Pois lambda é um subconjunto de E*. 
+}
+
+--------------------------------------------------------------------------------Exercício:
+
+	-Alpha = {a, b, c}
+	-L2 = {ab, bc, c}
+	-L2* = {lambda, ab, bc, c, abab, abbc, abc, bcab, bcbc, bcc, cab, cbc, cc...infinito}	
+
