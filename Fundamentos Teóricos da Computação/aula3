@@ -1,0 +1,3 @@
+E = {0, 1}
+E* = Eº⁰ U Eº¹ U Eº2 ...
+E* = {lamba} U {0, 1} U {00, 01, 10, 11} U ...= {lamba, 0 , 1, 00, 01, 10, 11, ...}//Todas as palavras em binário, logo E é uma linguagem de elementos finitos porém palavras infinitas.

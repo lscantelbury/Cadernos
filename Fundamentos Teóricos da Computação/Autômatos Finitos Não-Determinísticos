@@ -1,0 +1,18 @@
+Motivação:
+
+-Determinístico: dado um estado e um síbolo, é possível predizer qual o próximo estado o autômato irá assumir.
+	Ex: a→ b→ c→ d //No final aceita ou rejeita.
+-Não-Determinístico: Várias escolhas podem existir para o próximo estado em qualquer ponto da computação.//Existem várias escolhas para um próximo estado.
+	Ex: a → ab ou bc ou dc... // Aceita e rejeita no meio do caminho até encontrar o caminho correto.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Autômatos Finitos Não-Determinísticos(AF):
+
+#Ver ilustração da aula do dia 16/09/21.
+
+Conjunto das partes:{
+	A = {x, y, z}
+	P(A) = {ø, {x}, {y}, {z}, {x, y}, {x, z}, {y , z}, {x, y, z}}
+	|A| = n
+	|P(A)Z = 2^n
+}
+
