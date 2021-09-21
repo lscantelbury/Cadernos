@@ -1,0 +1,13 @@
+Linguagens Regulares:{
+	-AFD
+	-AFND, An = <Q, Sigma, delta, q⁰, F>//delta assume múltiplos estados simultâneamente, dessa forma a computação vai acontecendo em paralelo e se um dos ramos da computação aceita, então a palvara é aceita.
+	-Todo AFND possui um AFD equivalente.
+
+}
+----------------------------------------------------------------------
+Prova por construção:
+
+-Caso 2: há transições lambdas{
+	-Converta o AFND a seguir para o seu AFD equivalente.
+	//ver ilustrações da aula 6
+}

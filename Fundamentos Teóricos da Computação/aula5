@@ -1,0 +1,26 @@
+-Não-determinismo: Várias escolhas podem existir para o próximo estado em qualquer ponto da computação.
+
+//Ver ilustrações da aula 5 para difenrenciar a computação determinística e não-determinística.
+
+----------------------------------------------------------------------
+Autômatos Finitos Não-Determinísticos (AFND):
+
+-Na programação: analogia com threads.
+-Todas as possibilidades em paralelo.
+-Transições a partir de um estado: zero, uma ou várias.
+-Se uma das computações aceita, então o autômato aceita a entrada.
+
+----------------------------------------------------------------------
+Definição Formal de AFND:
+
+-Um AFND An = <Q, Sigma, delta, q⁰, F> em que:{
+	-Q é o conjunto de estados.
+	-Sigma é o alfabeto.
+	-q⁰ é o estado inicial
+	-F C Q.
+	-Delta: Q x E → P(Q) é a função de transição //A função de transição vai levar um estado, lendo um simbolo do alfabeto ou a palavra vazia (lamba), o que vai levar a um dos subconjuntos de todos os possíveis estados que o autômato pode estar ao mesmo tempo.
+}
+----------------------------------------------------------------------
+Equivalência entre AFND e AFD:
+
+-Prova por construção: Pega um AFN e transforma em um AFD. Ambos aceitam a mesma linguagem regular.
