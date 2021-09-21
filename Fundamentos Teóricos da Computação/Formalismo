@@ -1,0 +1,74 @@
+E = {0, 1}
+E* = Eº⁰ U Eº¹ U Eº2 ...
+E* = {lamba} U {0, 1} U {00, 01, 10, 11} U ...= {lamba, 0 , 1, 00, 01, 10, 11, ...}//Todas as palavras em binário, logo E é uma linguagem de elementos finitos porém palavras infinitas.
+Zeros = {0, 00, 000, 0000, ..., infinito}//Conjunto infinito, subconjunto de E*, pois em E* há palavras compostas apenas por 0's
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Autômato Finito Determinístico(AFD):
+
+#O que é um computador? //depende da definição de computação para cada autômato.
+
+-Modelos de computação:{
+	-Modelo idealizado.
+	-Preciso em alguns aspectos, mas não em todos.
+}
+-Primeiro exemplo de modelo: Memória finita e extremamente limitada.{
+	Ex: Porta automática de Shopping:{
+		-Estados = {Aberto, Fechado}
+		-Sensore = {Sensor da frente, Sensor de tras, Ambos, Nenhum}
+		
+		-Dada uma leitura dos sensores, um estado da porta é assumido.
+		-Estados X Sensores → Estado
+		
+		-TABELA:
+			frente		tras		ambos		nenhum
+		Aberto: aberto		aberta		aberta		fechada
+		Fechado:aberto		aberto		aberto		fechado
+
+		//LER DIAGRAMA DE ESTADOS DA AULA 3
+
+		-Estado inicial: é indicado por uma seta.
+		-Estado final: é indicado por um círculo dentro do outro.
+
+		-Entrada1: Fechado, Tras, Aberto, Fechado (Rejeitada)
+		-Entrada2: Nenhum, Nenhuma, Ambos, Nenhuma (Aceita)
+
+		//LER DIAGRAMA DE ESTADOS DA AULA 3
+
+		-Quantidade de memória: 1 bit.
+		-Outros exemplos do dia a dia: máquina de lavar, elevador, etc.
+		-Muito importante no desenvolvimento de Jogos.
+		
+		-Probabilidade: Cadeias de Markov:{
+			-Processamento de voz.
+			-Reconhecimento de padrões.
+			-Muitas outras aplicações.
+		}
+	}
+}
+//Se chama modelo DETERMINÍSTICO pois um input sempre gerará o mesmo output, dessa forma pode-se predizer um output dependendo do input
+
+----------------------------------------------------------------------
+Formalismo:{
+
+	-Precisão
+	-Notação
+	-Podem ter 0 estados de aceitação
+	-Exatamente uma transição saindo de cada estado para cada símbolo de entrada.
+}
+
+-Definição normal de Autômato Finito Determinístico(AFD):{
+	-Um AFD é uma 5-tupla A = <Q, E, q⁰, F, Delta>
+	-Q denota um conjunto vazio finito não-vazio de estados.
+	-E é o conjunto finito não vazio de símbolos.
+	-q⁰ é o estado inicial.
+	-F C Q é o conjunto de estados de aceitação.
+	-Delta é a função de transiçao.
+}
+
+----------------------------------------------------------------------
+//Podem existir autômatos com 0 estados de aceitação.
+
+-Complemento da Linguagem, denotado por um traço sobre o símbolo da linguagem, é o conjunto de palavras não aceitas pelo autômato.
+
+-A união do conjunto de estados de aceitação de um autômato + seu complemento é igual a Sigma*.

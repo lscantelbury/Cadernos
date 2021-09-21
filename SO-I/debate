@@ -1,0 +1,22 @@
+- o debate foi iniciado em 29 de janeiro de 1992, por Andrew Stuart Tanenbaum, em um post intiulado "LINUX is obsolete" no grupo de discussão da Usenet comp.os.minix.
+-afirmação de Tanenbaum: micronúcleos > núcleos monolítios.
+-"Linux já é obsoleto em 1992", citação de Tanenbaum.
+
+-AFIRMAÇÃO DE JONATHAN SHAPIRO: Na prática, sistemas operacionais com arquitetura de micronúcleos são mais confiáveis e seguros.
+
+-Tanenbaum afirmava que o núcleo Linux estava intimamente atado à linha de processadores x86 que não poderia ter qualquer uso no futuro, umavez que essa tecnologia seria, então, suplantada.
+
+-O argumento de Tanenbaum estava relacionado a portabilidade, e que o núcleo Linux estava ligado a linha de processadores baseados no Intel 80386 e que não teria utilidade no futuro.
+
+-Linus Torvalds justificou a profunda ligação do Linux com a arquitetura x86 como uma forma de aprendizado pessoal e que reconhecia a possível falta de portabilidade.
+
+-Linus apontou que o MINIX sofria para realizar multitarefas.
+
+-Tanenbaum justificou argumentando que seu sistema operancional não requeria um hardware muito superior ao que um estudante possuía.
+
+-Microkernel: É mais compacto e rápido em funções embutidas. Possui maior flexibilidade por permiti adicionar módulo de suport sem reiniciar.
+
+-Kernel Monolítico: é totalemente independente, possui tudo desenvolvido nele desde o início. Em compensação é como um carro que toda vez que é preciso trocar de marcha, deve ser desligado.
+
+---------------------------------------------------------------------
+
