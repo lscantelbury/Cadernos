@@ -1,0 +1,13 @@
+-Definição de computação por um AFD:{
+	-Seja A1 um AFD e w £ Sigma* uma palavra, se A aceita w, a computação de w por A é dada por uma sequência de estados.
+	-Não podem ser estados quaisquer:{
+		-O primeiro estado R⁰ tem que ser igual ao estado inicial q⁰.
+		-R(i + 1) é fruto da função de transição(delta) que leu Ri e wi. R(i + 1) = Delta(Ri,wi).
+		-Rn(estado final) deve pertencer ao estado de aceitação.
+	}
+}
+---------------------------------------------------------------------
+Linguagem Regular: A linguagem que é aceita por um AFD 'A.
+
+-Um autômato define uma linguagem regular, então se juntar todos os autômatos do domínio de AFDs existentes, existe um superconjunto de linguaguens regulares.Assim chamada "Classe das linguagens regulares".
+//Podem ter autômatos sem estados de aceitação, ou seja, reconhece a linguagem ø.
