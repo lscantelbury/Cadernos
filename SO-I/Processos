@@ -1,0 +1,66 @@
+Conceitos:{
+	-Um sistema operacional executa uma variedade de programas ou tarefas de usuários.
+	-Process: Representação de programas ou tarefas em execução pelo SO(De forma simples: Um programa em execução)
+	-SOs modernos permitem a execução CONCORRENTE de vários processos(processos compartilham o tempo da CPU)
+	-A principal tarefa do SO é ESCALONAR(definir o momento em que cada processo é executado na linha do tempo) a execução de vários processos para uma ou poucas CPUs.
+}
+
+--------------------------------------------------------------------------------
+Estados de um Processo:{
+
+	-Para organizar a execução de varios processos, o SO controla o estado deste conforme sua execução.
+	-Cada processo pode estar em um dos seguintes estados:{
+		-novo: O processo está sendo criado.
+		-executando: O processo está aesperando a ocorrência de algum evento(ex:I/O)//esperando algo para ELE utilizar.
+		-pronto: O processo está esperando para ser atribuído a algum processador.//está esperando a vez dele de executar.Esperando a batata chegar na mão dele.
+		-terminado: O processo terminou sua execução.
+		//ver ilustração de processos no slide do dia 22/09/21
+	}
+}
+
+--------------------------------------------------------------------------------
+Bloco de Controle de Processo(PCB/Process Control Block):{
+	//O sistema operacional salva informações dos processos.
+	//O PCB é um registro que o sistema operacional faz para cada processo, cada um tem um PCB, como uma ficha de um paciente no hospital.
+
+	-Representação de um processo no sistema. Um PCB mantém muitas informações associadas a um processo:{
+		-Estado do processo(ex:novo, executando, etc.)
+		-Contador do programa(end da próxima instrução)//quando um processo for interrompido, ele pode voltar a executar de onde parou.
+		-Registradores da CPU(armazena o conteúdo dos registradores quando o processo for interrompido)
+		-Informações de escalonamento de processo(ex: prioridade, ponteiros de filas de escalonamento)
+		-Informações de gerenciamento de memória.
+		-Informações de contabilização(quando, onde).
+		-Informações de status de I/O(ex: lista de dispositivos de I/O alocados)
+	}
+}
+
+--------------------------------------------------------------------------------
+Escalonamento de Processos:{
+	-O objetivo da multiprogramação é ter processos em execução o tempo todo(maximizar a utilização da CPU)
+	-Em um sistema com um processador:{
+		-Nunca haverá mas de um processo em execução.
+		-Se houver mais processos, os demais terão que esperar até que a CPU seja liberada e possa ser reescalonada.
+	}
+	-Para compartilhar a CPU, é desejável alternar entre processos de forma frequente(Para que os usuários possam interagir com cada programa durante sua execução)
+}
+
+--------------------------------------------------------------------------------
+Escalonamento de Processos:{
+	-Característica de um processo:Ciclo de surtos de CPU e I/O{
+		-Propriedade observada nos processos: a execução de um processo consiste de um ciclo de execuçao na CPU e espera de I/O, alternando entre esses dois estados.
+		-Esperas nos processos oportunizam a utilização da CPU para execução de outros processos prontos!//enquanto um processos faz I/O, o SO executa partes de outros processos enquanto a CPU está disponível.
+	}
+}
+
+--------------------------------------------------------------------------------
+Principais Componentes:{
+	-Filas de escalonamento:{
+		-Função: Organizar os vários processos em execução.
+		-Tipos:{
+			-Fila de processos pronto: conjuntos de todos os processos residentes em memória principal, prontos e esperando serem executados pela CPU.
+			-Fila de dispositivo ou fila de espera: conjunto de processos esperando para acessar um dispositivo. Cda dispositivo tem sua própria fila.
+		}
+	}
+	-Escalonador(Scheduler):Seleciona processos prontos para a execução na CPU
+	-Executor(Dispatcher): Dá controle da CPU ao processo selecionado pelo escalonador.	
+}
