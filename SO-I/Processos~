@@ -73,14 +73,4 @@ Ciclo de Vida de Processos:{
 		-O processo pode criar um subprocesso e esperar seu término.
 	}
 	-Um processo continua seu ciclo até terminar, assim, é removido de todas as filas, seu PCB e recursos são desalocados.
-	-Quando a CPU muda para outro processo, o SO deve salvar o etado do processo antigo e carregar o estado do novo.
-	-O contexto de um processo é representado no seu PCB.
-	-Troca de contexto é um overhead para o sistema, já que ele não pode fazer nada útil durante a troca.
-}
----------------------------------------------------------------------------------
-Modelos de Escalonamento:{
-	-Escalonamento preemptivo e não-preemptivo:{
-		-Não preemptivo: Só ocorre o escalonamento de processos quando o que estiver em execução terminar ou passar para o estado de espera (ex: I/O)//Comum nos SOs multitarefa antigos, como o Windows 3.1
-		-Preemptivo: Pode ocorrer o escalonamento de processos em qualquer situação, ou seja, devido auma interrupção pelo SO, conclusão do processo, ou I/O.//Comum a todos os SOs atuais. A vantagem é ue um processo não prejudica a execução de outros.
-	}
 }
