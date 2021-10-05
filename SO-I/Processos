@@ -81,6 +81,6 @@ Ciclo de Vida de Processos:{
 Modelos de Escalonamento:{
 	-Escalonamento preemptivo e não-preemptivo:{
 		-Não preemptivo: Só ocorre o escalonamento de processos quando o que estiver em execução terminar ou passar para o estado de espera (ex: I/O)//Comum nos SOs multitarefa antigos, como o Windows 3.1
-		-Preemptivo: Pode ocorrer o escalonamento de processos em qualquer situação, ou seja, devido auma interrupção pelo SO, conclusão do processo, ou I/O.//Comum a todos os SOs atuais. A vantagem é ue um processo não prejudica a execução de outros.
+		-Preemptivo: Pode ocorrer o escalonamento de processos em qualquer situação, ou seja, devido auma interrupção pelo SO, conclusão do processo, ou I/O.//Comum a todos os SOs atuais. A vantagem é que um processo não prejudica a execução de outros.
 	}
 }
