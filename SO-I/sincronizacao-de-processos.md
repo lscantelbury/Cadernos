@@ -34,13 +34,14 @@
 	> Reg2 = Reg2 - 1;
 	> Count = Reg2;
 	- Ex: Supondo inicialmente count=5. Uma execução seria:
-	|s1|produtor|Reg1 = count|Reg1 = 5|
-	|--|--------|------------|--------|
-	|s2|produtor|Reg1 = Reg1 + 1|Reg1 = 6|
-	|s3|consumidor|Reg2 = count|Reg2 = 5|
-	|s4|consumidor|Reg2 = Reg2 - 1|Reg2 = 4|
-	|s5|produtor|count = Reg1|count = 6|
-	|s6|consumidor|count = Reg2|count = 4|
+	
+|s1 |produtor  |Reg1 = count  |Reg1 = 5 |
+|:--|:--------:|:------------:|--------:|
+|s2 |produtor  |Reg1 = Reg1 +1|Reg1 = 6 |
+|s3 |consumidor|Reg2 = count  |Reg2 = 5 |
+|s4 |consumidor|Reg2 = Reg2 -1|Reg2 = 4 |
+|s5 |produtor  |count = Reg1  |count = 6|
+|s6 |consumidor|count = Reg2  |count = 4|
 
 * O resultado incorreto se deve ao acesso concorrente à variável count.
 * O resultado da execução depende da ordem específica em que o acesso ocorre. A isso se dá o nome de condição de corrida (race condition).
