@@ -1,26 +1,26 @@
 # Exercício de Threads e Semáforos:
 
-## Implementando exemplo 1/2:
+#### Implementando exemplo 1/2:
 
-![](/home/luis/Imagens/print%20codigo%20SO.png)
+<img title="" src="file:///home/luis/Imagens/print%20codigo%20SO.png" alt="" data-align="center">
 
 De acordo com as aulas do dia 18/10 e 20/10
 
-## Modificando exemplo 1:
+#### Modificando exemplo 1:
 
-![Compilando conforme explicado na aula](/home/luis/Imagens/exemplo%201%20modificado.png)
+<img title="" src="file:///home/luis/Imagens/exemplo%201%20modificado.png" alt="Compilando conforme explicado na aula" data-align="center">
 
 Adicionando semáforos e duplicando as threads.
 
-## Compilando exemplo 1:
+#### Compilando exemplo 1:
 
-![](/home/luis/Imagens/compilando%20exemplo%201.png)
+<img title="" src="file:///home/luis/Imagens/compilando%20exemplo%201.png" alt="" data-align="center">
 
-## Executando exemplo 1:
+#### Executando exemplo 1:
 
-![](/home/luis/Imagens/executando%20exemplo%201.png)
+<img title="" src="file:///home/luis/Imagens/executando%20exemplo%201.png" alt="" data-align="center">
 
-### Resultados:
+#### Resultados:
 
 Ao implementar duas seções críticas nas funções `Thread0()`e `Thread1()`, a execução manteve os outputs das threads em ordem:
 
@@ -74,21 +74,19 @@ int main(){
 }
 ```
 
-## Modificando exemplo 2:
+#### Modificando exemplo 2:
 
-![](/home/luis/Imagens/exemplo%202%20modificado.png)
+<img src="file:///home/luis/Imagens/exemplo%202%20modificado.png" title="" alt="" data-align="center">
 
-## Compilando exemplo 2:
+#### Compilando exemplo 2:
 
-![](/home/luis/Imagens/compilando%20exemplo%202.png)
+<img src="file:///home/luis/Imagens/compilando%20exemplo%202.png" title="" alt="" data-align="center">
 
+#### Executando exemplo 2:
 
+<img src="file:///home/luis/Imagens/executando%20exemplo%202.png" title="" alt="" data-align="center">
 
-## Executando exemplo 2:
-
-![](/home/luis/Imagens/executando%20exemplo%202.png)
-
-### Resultados:
+#### Resultados:
 
 Os outputs de cada uma das funções foram intercalados e duplicados. Primeiro todos os outputs da `Thread1()`e depois todos os outputs da `Thread2()`. Após isso o processo se repetiu pois duas threads a mais, executando as funções `Thread1()` e `Thread2()`, foram adicionadas.
 
