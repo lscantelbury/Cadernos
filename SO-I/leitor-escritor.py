@@ -52,10 +52,16 @@ def main():
     lista = [1,2,3]
     print(lista)
     
-    leitor = Leitor(lista)
-    leitor.start()
+    leitor1 = Leitor(lista)
+    leitor1.start()
     
-    escritor = Escritor(lista)
-    escritor.start()
+    leitor2 = Leitor(lista)
+    leitor2.start()
+    
+    escritor1 = Escritor(lista)
+    escritor1.start()
+    
+    escritor2 = Escritor(lista)
+    escritor2.start()
 
 main()
