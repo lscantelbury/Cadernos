@@ -1,5 +1,6 @@
 from threading import Thread
 from threading import Semaphore
+import Relogio
 import os
 import time
 import random
@@ -48,17 +49,7 @@ class Consumidor(Thread):
             listaDiponivel.release() # Terminei, pode utilizar a lista
             podeProduzir.release() # Mais um item pode ser produzido
 
-class Relogio(Thread):
-    def __init__(self, secs):
-        Thread.__init__(self)
-        self.secs = secs
-        self.contador = 0
 
-    def run(self):
-        while self.contador != self.secs:
-            time.sleep(1)
-            self.contador += 1
-        os._exit(0)
 def main():
     timer = Relogio(20) # O programa vai executar por 20 segundos
     timer.start()
