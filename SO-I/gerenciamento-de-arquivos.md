@@ -1,7 +1,10 @@
 # Lista de Gerenciamento de Arquivos
 
 ## 1. Faça um resumo de 1 página com os pontos principais relacionados ao gerenciamento de arquivos.
-
+ 
+O sistema de arquivos é a forma como o SO estrutura informações que podem ser lidas, gravadas e compartilhadas por/entre processos do sistema. 
+A manipulação de arquivos pelo usuário é uma atividade que envolve diretamente o sistema de arquivos do sistema operacional, sendo esta parte a mais visível do mesmo.
+Ao criar arquivos no disco, informações devem ser armazenadas para o acesso do sis
 ## 2. Quais as vantagens da alocação de disco encadeada em relação à contígua?
 
 Ao dividir a alocação em blocos através do disco ( _extent_ ), cada bloco contendo um ponteiro para o bloco seguinte, o arquivo pode ser distribuido pelo disco sem a necessidade de ser alocado inteiramente num mesmo espaço de memória, contrário à contígua, que por necessitar de uma alocação inteira na partição disponível, acaba por fragmentar o espaço em disco ou não sendo possível de alocar. Porém sua leitura deve ser estritamente sequencial, já que um ponteiro de um bloco aponta para o próximo.
