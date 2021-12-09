@@ -16,3 +16,9 @@ Uma **Tabela de Alocação de Arquivos**, do inglês _*F*ile *A*llocation *T*abl
 O SO percorre o ***FAT*** em busca do número do _cluster_ de cada bloco do arquivo que foi distribuído pelo disco até alcançar o final do arquivo. As principais variantes do formato ***FAT*** são o ***FAT12***, ***FAT16*** E ***FAT32***, nomeadas a partir do número de bits de cada elemento da tabela.
 
 ## 5. Pesquise quais são e as características dos principais sistemas de arquivos (ex. ntfs, ext4, etc) usados pelos SOs modernos (Linux, Windows e MacOS X).
+
+***NTFS***: Do inglês _*N*ew *T*echnology *F*ile *S*ystem_, o sistema de arquivos _NTFS_ foi criado pela _Microsoft_ com o intuito de resolver as limitações do sistema de arquivos _FAT32_. Com avanços na área de: **segurança**, já que introduziu suporte à criptografia, na de recuperação de arquivos (***backups***), de forma mais avançada que as previamente conhecidas, no suporte a **discos rígidos maiores**, n a **compressão** de arquivos, tratamento de **falhas** e **erros**, nomes **UNICODE** e etc. O ***NTFS*** então se tornou o sistema de arquivos mais utilizado nos computadores, sendo este o padrão do _Windows_.
+
+***EXT4***: Sistema de arquivos padrão do GNU/Linux, que introduz principalmente a endereçamento de 48-bits aumentando a capacidade de endereçar arquivos maiores. Para diminuir a latência rotacional do disco e a procura do braço ao ler arquivos em busca das _extents_, o ***EXT4*** tem algoritmos de alocação que mantém os blocos de um arquivo próximos uns dos outros o máximo possível.
+
+***exFAT***: Criado para resolver os problemas do _FAT32_ , voltado para disposivitos flash, e com o foco no: suporte a arquivos grandes, maior velocidade e compatibilidade entre os dispositivos. O sistema de arquivos ***exFAT*** é recomendado para dispositivos de armazenamento externo com memória excedente a 4GB como HDs externos.
