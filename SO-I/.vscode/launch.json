@@ -5,11 +5,13 @@
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
-      "args": [],
+      "args": [
+        ""
+      ],
       "stopAtEntry": false,
-      "cwd": "/home/luis/Documentos/GitHub/Cadernos/SO-I",
+      "cwd": "c:/Users/lscan/OneDrive/Documentos/GitHub/Cadernos/SO-I",
       "environment": [],
-      "program": "/home/luis/Documentos/GitHub/Cadernos/SO-I/build/Debug/outDebug",
+      "program": "c:/Users/lscan/OneDrive/Documentos/GitHub/Cadernos/SO-I/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
